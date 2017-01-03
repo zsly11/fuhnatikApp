@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">fuhnatik</string>
+
+    <string name="dialog_password_title">Password</string>
+    <string name="dialog_email_title">E-Mail</string>
+    <string name="dialog_username_title">Username</string>
+    <string name="dialog_whoops_title">Whoops...</string>
+    <string name="dialog_tryagain">try again</string>
+    <string name="dialog_cancel">cancel</string>
+    <string name="dialog_whoops_message">You left a field empty.</string>
+    <string name="dialog_email_message">Your username is your email address.</string>
+
+    <!-- Fantasy Reporter Alerts -->
+    <string name="dialog_delete_post">delete</string>
+    <string name="dialog_delete_story">Delete Story</string>
+    <string name="dialog_title_story_empty">Title/Story Empty</string>
+    <string name="dialog_title_story_empty_message">You left the title or story empty. This can not be done. This type something.</string>
+    <string name="dialog_did_you_proof_read">Did you proof read?</string>
+    <string name="dialog_yes_send_story">yes, send</string>
+    <string name="dialog_no_go_back">no, go back</string>
+    <!-- Join Activity Alerts-->
+    <string name="dialog_password_message">Your password must be at least eight (8) characters long.</string>
+    <string name="dialog_join_email_message">Your email is in the wrong format. my@email.com</string>
+    <string name="dialog_username_length_title">Username Length</string>
+    <string name="dialog_username_length_message">Your username can not be more than 20 characters</string>
+
+    <!-- LoginActivity Alerts -->
+    <string name="dialog_password_message_login">Remember, the password must be at least eight (8) characters long.</string>
+
+    <string name="drawer_open">drawer open</string>
+    <string name="drawer_close">drawer close</string>
+
+    <string-array name="player_positions">
+        <item>Select an option</item>
+        <item>View All Players</item>
+        <item>Quaterbacks</item>
+        <item>Running Backs</item>
+        <item>Wide Receivers</item>
+        <item>Tight Ends</item>
+        <item>Kickers</item>
+        <item>Defence</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0ffee"
+    tools:context="com.fuhnatik.fuhnatik.JoinActivity"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/register_screen_bg"
+        android:id="@+id/registerForm"
+        android:layout_marginTop="20dp"
+        android:padding="8dp">
+
+            <LinearLayout android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/registerFullName"
+                android:background="@drawable/edittext_login_register"
+                android:padding="2dp">
+
+                <TextView android:id="@+id/fullNameText"
+                    android:layout_width="105dp"
+                    android:layout_height="fill_parent"
+                    android:padding="10dp"
+                    android:text="Full Name"
+                    android:textColor="#2d6824"
+                    android:textSize="18dp"/>
+                <EditText
+                    android:id="@+id/fullNameEdit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="First and last name"
+                    android:textSize="15dp"
+                    android:textColorHint="#cdcdcd"
+                    android:layout_weight="1"
+                    android:backgroundTint="@android:color/transparent"
+                    android:singleLine="true"
+                    android:inputType="textCapWords"/>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/registerNickName"
+                android:layout_below="@id/registerFullName"
+                android:background="@drawable/edittext_login_register"
+                android:padding="2dp">
+
+                <TextView android:id="@+id/nickNameText"
+                    android:layout_width="105dp"
+                    android:layout_height="fill_parent"
+                    android:padding="10dp"
+                    android:text="Username"
+                    android:textColor="#2d6824"
+                    android:textSize="18dp" />
+                <EditText
+                    android:id="@+id/nickNameEdit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="How people find you"
+                    android:textSize="15dp"
+                    android:textColorHint="#cdcdcd"
+                    android:layout_weight="1"
+                    android:backgroundTint="@android:color/transparent"
+                    android:singleLine="true"/>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/registerEmail"
+                android:background="@drawable/edittext_login_register"
+                android:layout_below="@+id/registerNickName"
+                android:padding="2dp"
+                android:layout_marginTop="10dp">
+
+                <TextView android:id="@+id/emailText"
+                    android:layout_width="105dp"
+                    android:layout_height="fill_parent"
+                    android:padding="10dp"
+                    android:text="E-Mail"
+                    android:textSize="18dp"
+                    android:textColor="#2d6824"/>
+
+                <EditText
+                    android:id="@+id/emailEdit"
+                    android:layout_width="fill_parent"
+                    android:hint="This is your login"
+                    android:textColorHint="#cdcdcd"
+                    android:textSize="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="textEmailAddress"
+                    android:backgroundTint="@android:color/transparent"
+                    android:singleLine="true"/>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/registerPassword"
+                android:background="@drawable/edittext_login_register"
+                android:layout_below="@+id/registerEmail"
+                android:padding="2dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/passwordText"
+                    android:layout_width="105dp"
+                    android:layout_height="fill_parent"
+                    android:padding="10dp"
+                    android:text="Password"
+                    android:textSize="18dp"
+                    android:textColor="#2d6824"/>
+
+                <EditText
+                    android:id="@+id/passwordEdit"
+                    android:layout_width="fill_parent"
+                    android:hint="Min. 8 characters"
+                    android:textColorHint="#cdcdcd"
+                    android:inputType="textPassword"
+                    android:textSize="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@android:color/transparent"
+                    android:singleLine="true"/>
+
+                <TextView
+                    android:id="@+id/passwordShowText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:padding="10dp"
+                    android:text="SHOW"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:textColor="#2d6824"/>
+                <TextView
+                    android:id="@+id/passwordHideText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:visibility="gone"
+                    android:padding="10dp"
+                    android:text="HIDE"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:textColor="#2d6824"/>
+            </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffffff"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/registerForm"
+        android:padding="12dp"
+        android:gravity="top|center">
+
+        <!-- text is set inside of JoinActivity.java -->
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:gravity="center"
+        android:id="@+id/aboutFuhnatikText"
+        android:autoLink="web"
+        android:layout_marginTop="10dp"/>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Let's Start Collecting"
+            android:padding="15dp"
+            android:id="@+id/registerButton"
+            android:layout_below="@id/aboutFuhnatikText"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_green"
+            android:textColor="#ffffff"
+            />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="how do I play?"
+            android:id="@+id/howToPlayText"
+            android:layout_marginTop="18dp"
+            android:textColor="#2d6824"
+            android:layout_below="@id/registerButton"/>
+
+    </RelativeLayout>
+</RelativeLayout>

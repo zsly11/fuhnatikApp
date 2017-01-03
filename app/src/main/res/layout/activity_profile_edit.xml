@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0ffee"
+    tools:context="com.fuhnatik.fuhnatik.ProfileEditActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editProfileTop"
+        android:background="#2d6824"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp">
+
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:id="@+id/userProfileImage"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="#ffffff"
+            android:src="@drawable/profile_picture"
+            android:scaleType="centerCrop"/>
+
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_alignTop="@id/userProfileImage"
+            android:layout_alignLeft="@id/userProfileImage"
+            android:layout_alignRight="@id/userProfileImage"
+            android:layout_alignBottom="@id/userProfileImage"
+            android:src="@drawable/circle_image"
+            android:id="@+id/profileImage"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/change_picture"
+            android:layout_alignBottom="@+id/userProfileImage"
+            android:layout_alignRight="@+id/userProfileImage"
+            android:layout_alignEnd="@+id/userProfileImage" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="Username"
+            android:textColor="#ffffff"
+            android:textSize="30dp"
+            android:id="@+id/userProfileUsername"
+            android:layout_below="@+id/profileImage"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Full Name"
+            android:textColor="#cdcdcd"
+            android:textSize="20dp"
+            android:id="@+id/userProfileName"
+            android:layout_below="@+id/userProfileUsername"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10dp"
+            android:text="ObjectID"
+            android:textColor="#cdcdcd"
+            android:textAlignment="center"
+            android:id="@+id/userObjectID"
+            android:layout_below="@id/userProfileName"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:layout_below="@+id/editProfileTop">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/register_screen_bg"
+            android:id="@+id/registerForm"
+            android:layout_marginTop="5dp"
+            android:padding="8dp">
+
+            <LinearLayout android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/registerFullName"
+                android:background="@drawable/edittext_login_register"
+                android:padding="2dp">
+
+                <TextView android:id="@+id/fullNameText"
+                    android:layout_width="105dp"
+                    android:layout_height="fill_parent"
+                    android:padding="10dp"
+                    android:text="Full Name"
+                    android:textColor="#2d6824"
+                    android:textSize="18dp"/>
+                <EditText
+                    android:id="@+id/fullNameEdit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:textColorHint="#cdcdcd"
+                    android:layout_weight="1"
+                    android:backgroundTint="@android:color/transparent"
+                    android:singleLine="true"
+                    android:inputType="textCapWords"/>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/registerNickName"
+                android:layout_below="@id/registerFullName"
+                android:background="@drawable/edittext_login_register"
+                android:padding="2dp">
+
+                <TextView android:id="@+id/nickNameText"
+                    android:layout_width="105dp"
+                    android:layout_height="fill_parent"
+                    android:padding="10dp"
+                    android:text="Username"
+                    android:textColor="#2d6824"
+                    android:textSize="18dp" />
+                <EditText
+                    android:id="@+id/usernameEdit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:textColorHint="#cdcdcd"
+                    android:layout_weight="1"
+                    android:backgroundTint="@android:color/transparent"
+                    android:singleLine="true"/>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/registerEmail"
+                android:background="@drawable/edittext_login_register"
+                android:layout_below="@+id/registerNickName"
+                android:padding="2dp">
+
+                <TextView android:id="@+id/emailText"
+                    android:layout_width="105dp"
+                    android:layout_height="fill_parent"
+                    android:padding="10dp"
+                    android:text="E-Mail"
+                    android:textSize="18dp"
+                    android:textColor="#2d6824"/>
+
+                <EditText
+                    android:id="@+id/emailEdit"
+                    android:layout_width="fill_parent"
+                    android:textColorHint="#cdcdcd"
+                    android:textSize="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="textEmailAddress"
+                    android:backgroundTint="@android:color/transparent"
+                    android:singleLine="true"/>
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1.0"
+            android:padding="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <Button
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:text="cancel"
+                android:padding="15dp"
+                android:layout_weight=".5"
+                android:layout_marginRight="5dp"
+                android:id="@+id/cancelProfileButton"
+                android:background="@drawable/button_grey"
+                android:textColor="#000000" />
+
+            <Button
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:text="update profile"
+                android:padding="15dp"
+                android:layout_weight=".5"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/updateProfileButton"
+                android:background="@drawable/button_green"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

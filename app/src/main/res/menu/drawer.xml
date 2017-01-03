@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/menuTop">
+        <!--android:icon="@drawable/png here -->
+        <item
+            android:title="Learn How to Play"
+            android:id="@+id/howToPlayMenu"
+            android:icon="@drawable/how_to_play_icon">
+        </item>
+
+        <item android:title="Fantasy Reporter"
+            android:id="@+id/fantasyReporterMenu"
+            android:icon="@drawable/fantasy_reporter_icon">
+        </item>
+
+        <item android:title="Trophy Room"
+            android:id="@+id/trophyRoomMenu"
+            android:icon="@drawable/trophy_room_icon">
+        </item>
+
+        <item android:title="My Friends"
+            android:id="@+id/myFriendsMenu"
+            android:icon="@drawable/my_friends_icon">
+        </item>
+
+        <!--
+        <item android:title="Mini Games / Other / More .... etc"
+            android:id="@+id/miniGamesMenu">
+        </item>
+
+        1) Fantasy team name generator
+        2) Face painting
+        -->
+
+
+    </group>
+
+        <group
+            android:id="@+id/menu_bottom"
+            android:checkableBehavior="none">
+
+
+            <item android:title="Contact Support"
+                android:id="@+id/contactSupportMenu">
+            </item>
+
+            <item android:title="Sign Out"
+                android:id="@+id/signOutMenu">
+            </item>
+        </group>
+
+    <!-- Do this for a SUB Menu
+    <item android:title="Sub Menu">
+        <menu>
+            <item
+                android:id="@+id/subMenu"
+                android:title="subMenu">
+            </item>
+        </menu>
+    </item>
+     -->
+</menu>

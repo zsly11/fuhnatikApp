@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.fuhnatik.fuhnatik.JoinActivity"
+    android:background="#f0ffee"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    android:id="@+id/addStoryToReporter">
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/register_screen_bg"
+        android:id="@+id/titleLayout"
+        android:layout_marginTop="20dp"
+        android:padding="8dp">
+
+        <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/registerFullName"
+            android:background="@drawable/edittext_login_register"
+            android:padding="2dp">
+
+            <TextView android:id="@+id/titleText"
+                android:layout_width="80dp"
+                android:layout_height="fill_parent"
+                android:padding="10dp"
+                android:text="Title"
+                android:textColor="#2d6824"
+                android:textSize="18dp" />
+            <EditText
+                android:id="@+id/titleEditText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Title of your story"
+                android:textSize="15dp"
+                android:textColorHint="#cdcdcd"
+                android:layout_weight="1"
+                android:backgroundTint="@android:color/transparent"
+                android:singleLine="true"
+                android:inputType="textCapWords"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/storyLayout"
+            android:layout_below="@id/registerFullName"
+            android:background="@drawable/edittext_login_register"
+            android:padding="2dp">
+
+            <TextView android:id="@+id/storyText"
+                android:layout_width="80dp"
+                android:layout_height="fill_parent"
+                android:padding="10dp"
+                android:text="Report"
+                android:textColor="#2d6824"
+                android:textSize="18dp" />
+            <EditText
+                android:id="@+id/storyEditText"
+                android:scrollbars="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="150dp"
+                android:hint="Type up the entire report"
+                android:textSize="15dp"
+                android:textColorHint="#cdcdcd"
+                android:layout_weight="1"
+                android:backgroundTint="@android:color/transparent"
+                android:gravity="top"
+                android:inputType="textCapSentences|textMultiLine"/>
+        </LinearLayout>
+
+
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="** insert an image **"
+            android:padding="15dp"
+            android:id="@+id/uploadImage"
+            android:layout_below="@id/storyLayout"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_grey"
+            android:textColor="#000000"
+            android:layout_marginBottom="8dp"
+            />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="submit story"
+            android:padding="15dp"
+            android:id="@+id/uploadStory"
+            android:layout_below="@id/uploadImage"
+            android:background="@drawable/button_green"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="20dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Preview:"
+            android:id="@+id/previewStory"
+            android:layout_below="@+id/uploadStory"
+            android:textSize="20dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_below="@id/previewStory">
+
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:background="#4D000000"
+                android:id="@+id/previewFantasyImage" />
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/previewFantasyImage"
+                android:background="#40000000">
+
+                <TextView
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Title"
+                    android:id="@+id/previewFantasyTitle"
+                    android:gravity="center_vertical"
+                    android:textColor="#ffffff"
+                    android:paddingTop="10dp"
+                    android:layout_alignTop="@+id/readStoryArrow"
+                    android:layout_alignLeft="@+id/dateText"
+                    android:layout_alignStart="@+id/dateText" />
+
+                <TextView
+                    android:textColor="#ffffff"
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/dateText"
+                    android:layout_below="@id/previewFantasyTitle"
+                    android:layout_marginTop="-3dp"
+                    android:textSize="9dp"
+                    android:textAllCaps="true"
+                    android:layout_marginLeft="20dp"
+                    android:paddingBottom="10dp"/>
+
+
+
+            </RelativeLayout>
+
+
+
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    </RelativeLayout>
+</ScrollView>

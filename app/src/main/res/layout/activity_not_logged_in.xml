@@ -1,0 +1,128 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/logoSaying">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/fuhnatikLogo"
+            android:src="@drawable/fuhnatik_logo"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="40dp"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="a person whose enthusiasm is"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            android:layout_marginTop="-15px"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="extreme of beyond normal limits"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="15dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/open_cards"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="25dp"
+            android:id="@+id/mainImageInfo"/>
+
+        <!--
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/login_cards"
+            android:adjustViewBounds="true"/>
+            -->
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="5dp">
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="get started"
+            android:padding="15dp"
+            android:layout_gravity="center"
+            android:id="@+id/joinButton"
+            android:layout_marginTop="47dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button_green"
+            android:textColor="#ffffff"
+            />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="You're already a fuhnatik?"
+            android:textColor="#ddffd8"
+            android:textSize="15dp"
+            android:layout_marginTop="8dp"
+            android:layout_below="@id/joinButton"
+            android:textAllCaps="true"
+            android:id="@+id/alreadyFuhnatik"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="LOGIN"
+            android:layout_marginTop="12dp"
+            android:textColor="#ffffff"
+            android:textSize="17dp"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@id/alreadyFuhnatik"
+            android:id="@+id/loginAccount"/>
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="changing the way we play fantasy sports!"
+            android:textColor="#ffffff"
+            android:textSize="13dp"
+            android:layout_below="@id/loginAccount"
+            android:id="@+id/changing"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="...one game at a time..."
+            android:textColor="#ffffff"
+            android:textSize="13dp"
+            android:layout_below="@id/changing"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
