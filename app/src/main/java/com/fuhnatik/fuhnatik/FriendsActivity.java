@@ -9,7 +9,7 @@ import com.parse.ParseUser;
 
 public class FriendsActivity extends AppCompatActivity {
 
-    public static final String TAG = FantasyReporterActivity.class.getSimpleName();
+    public static final String TAG = FriendsActivity.class.getSimpleName();
     private ImageButton fabSearchFriends;
     private ParseUser currentUser;
 

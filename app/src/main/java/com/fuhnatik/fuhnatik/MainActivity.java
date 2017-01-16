@@ -228,6 +228,10 @@ public class MainActivity extends AppCompatActivity{
 
                     case R.id.trophyRoomMenu:
                         Toast.makeText(getApplicationContext(), "Trophy Room Menu", Toast.LENGTH_LONG).show();
+                        Intent trophyRoom = new Intent(MainActivity.this, TrophyRoomActivity.class);
+                        trophyRoom.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                        trophyRoom.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                        startActivity(trophyRoom);
                         break;
 
                     case R.id.myFriendsMenu:

@@ -20,7 +20,6 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.github.curioustechizen.ago.RelativeTimeTextView;
 import com.parse.GetCallback;
@@ -65,7 +64,7 @@ public class FantasyReporterListAdapter extends ArrayAdapter<ParseObject> {
      * @param position Where is the list we are.
      * @param convertView The view
      * @param parent The parent of this view
-     * @return
+     * @return the view
      */
     @Override
     public View getView(final int position, View convertView, ViewGroup parent) {
@@ -185,6 +184,7 @@ public class FantasyReporterListAdapter extends ArrayAdapter<ParseObject> {
                                         .setPositiveButton(R.string.dialog_delete_post, new DialogInterface.OnClickListener() {
                                             @Override
                                             public void onClick(DialogInterface dialog, int which) {
+                                                //TODO NEED TO ADD AS NEW DELETE IN BACKGROUND API. SO WE CAN ADD A LOADING
                                                 report.deleteInBackground();
                                                 Intent reloadFantasyReporter = new Intent(activityContext, FantasyReporterActivity.class);
                                                 reloadFantasyReporter.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);

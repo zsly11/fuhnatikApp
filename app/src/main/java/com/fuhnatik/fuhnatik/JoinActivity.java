@@ -147,6 +147,12 @@ public class JoinActivity extends AppCompatActivity implements View.OnClickListe
                         newUser.put(AppConstants.PARSEUSER_NUMBER_OF_GEMS, 100);
                         newUser.put(AppConstants.PARSEUSER_PROFILE_IMAGE, file);
 
+                        //TODO Put in that the user doesn't have any trophies
+                        newUser.put(AppConstants.PARSE_TROPHY_HIGHEST_POINTS_WEEKLY, false);
+                        newUser.put(AppConstants.PARSE_TROPHY_WON_TWO_IN_ROW, false);
+                        newUser.put(AppConstants.PARSE_TROPHY_WON_IT_ALL, false);
+                        newUser.put(AppConstants.PARSE_TROPHY_PLAYER_UNDEFEATED, false);
+
                     file.saveInBackground(new SaveCallback() {
                         @Override
                         public void done(ParseException e) {

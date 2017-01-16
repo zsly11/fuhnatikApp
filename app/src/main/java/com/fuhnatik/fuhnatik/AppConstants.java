@@ -28,5 +28,12 @@ public final class AppConstants {
     public static final String PARSE_FANTASYREPORTER_STORYBY = "currentUser";
 
 
+    public static final String PARSE_TROPHY_HIGHEST_POINTS_WEEKLY = "trophyHighestPointsWeekly";
+    public static final String PARSE_TROPHY_WON_TWO_IN_ROW = "trophyWonTwoInRow";
+    public static final String PARSE_TROPHY_WON_IT_ALL = "trophyWonItAll";
+    public static final String PARSE_TROPHY_PLAYER_UNDEFEATED = "trophyPlayerUndefeated";
+
+
+
     public static final String QB_ELIMANNING_COMMON = "URL";
 }
