@@ -45,9 +45,7 @@ public class FantasyReporterReadActivity extends AppCompatActivity {
     private ProgressDialog progressDialog;
     private String theTitle, theStory;
     private Bitmap loadedBitmapImage;
-    private TextView TextView;
     public static final String TAG = FantasyReporterReadActivity.class.getSimpleName();
-//
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
